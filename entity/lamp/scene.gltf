@@ -1,0 +1,447 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4683,
+      "max": [
+        262.37579345703125,
+        126.5,
+        1979.5040283203125
+      ],
+      "min": [
+        -262.37579345703125,
+        -126.5,
+        -3.62396240234375e-05
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 56196,
+      "componentType": 5126,
+      "count": 4683,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 4683,
+      "max": [
+        0.9999995231628418,
+        0.9999999403953552,
+        0.9999732971191406,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -0.9999997615814209,
+        -0.9999650716781616,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4683,
+      "max": [
+        0.9855210185050964,
+        0.9951502680778503
+      ],
+      "min": [
+        0.008293457329273224,
+        0.015320632606744766
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 19464,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 112392,
+      "componentType": 5126,
+      "count": 996,
+      "max": [
+        317.2873840332031,
+        117.94593048095703,
+        2106.89111328125
+      ],
+      "min": [
+        -317.2873840332031,
+        -117.94612884521484,
+        1869.6995849609375
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 124344,
+      "componentType": 5126,
+      "count": 996,
+      "max": [
+        0.989148736000061,
+        0.9945970177650452,
+        1.0
+      ],
+      "min": [
+        -0.989148736000061,
+        -0.9945968389511108,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 74928,
+      "componentType": 5126,
+      "count": 996,
+      "max": [
+        0.9999992847442627,
+        0.9994456768035889,
+        0.9945964217185974,
+        1.0
+      ],
+      "min": [
+        -0.9999997019767761,
+        -0.9940829873085022,
+        -0.3664599657058716,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 37464,
+      "componentType": 5126,
+      "count": 996,
+      "max": [
+        0.5270929336547852,
+        0.9839491844177246
+      ],
+      "min": [
+        0.004599039442837238,
+        0.5448722839355469
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 77856,
+      "componentType": 5125,
+      "count": 5040,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "dasmodal (https://sketchfab.com/dasmodal)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/vintage-lamp-post-56f6dcb3865144cd84e049ca6a736fae",
+      "title": "Vintage lamp post"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 98016,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 45432,
+      "byteOffset": 98016,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 136296,
+      "byteOffset": 143448,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 90864,
+      "byteOffset": 279744,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 370608,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/metal_baseColor.png"
+    },
+    {
+      "uri": "textures/metal_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/metal_normal.png"
+    },
+    {
+      "uri": "textures/glass_baseColor.png"
+    },
+    {
+      "uri": "textures/glass_emissive.png"
+    },
+    {
+      "uri": "textures/glass_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "name": "metal",
+      "normalTexture": {
+        "index": 2
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicRoughnessTexture": {
+          "index": 1
+        },
+        "roughnessFactor": 0.4834222561
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emissiveTexture": {
+        "index": 4
+      },
+      "name": "glass",
+      "normalTexture": {
+        "index": 5
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 3
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cylinder014_metal_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Cylinder014_glass_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.0011031579924747348,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.4495028060894315e-19,
+        -0.0011031579924747348,
+        0.0,
+        0.0,
+        0.0011031579924747348,
+        2.4495028060894315e-19,
+        0.0,
+        0.0,
+        4.890937612370273e-29,
+        -2.2026824808563106e-13,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "lamp lowpoly.FBX"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        -0.00021198690228629857,
+        1.0
+      ],
+      "name": "Cylinder014"
+    },
+    {
+      "children": [
+        5,
+        6
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        -0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -4.6047567593632266e-05,
+        0.0,
+        1.0
+      ],
+      "name": "Object_4"
+    },
+    {
+      "mesh": 0,
+      "name": "Cylinder014_metal_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Cylinder014_glass_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    }
+  ]
+}
