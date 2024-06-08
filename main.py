@@ -3,6 +3,7 @@ from ursina.prefabs.first_person_controller import FirstPersonController
 from ursina.shaders import lit_with_shadows_shader
 from pygltflib import GLTF2
 
+
 app = Ursina()
 
 Sky()
@@ -10,6 +11,16 @@ Sky()
 # Memuat dan memutar suara
 backsound = Audio("backsound/1-05. Minecraft.mp3", autoplay=True, loop=True)
 backsound.volume = 2
+
+jump = Audio(
+  'backsound/jump.mp3',
+  loop = False,
+  autoplay = False,
+)
+jump.volume = 3
+
+
+
 # =======================================================================================
 # Tembok
 tembok_luar = Entity(
@@ -119,7 +130,15 @@ for i in range(-7, 86, 5):
     duplicate(wall_lapis3, position=Vec3(i, -0.50, -53))
 
 # =======================================================================================
-# =======================================================================================# =======================================================================================
+
+    robot = FrameAnimation3d(
+      'entity/Robot/robot',
+      position=(2,0,2),
+      fps=15,
+      scale=0.015,
+      color=color.blue
+    )
+# =======================================================================================
     
 # Membuat entitas univ
 university = Entity(
@@ -165,7 +184,7 @@ lapangan_baket = Entity(
 )
 
 kucing = Entity(
-    model="entity/manusia-hewan/cats_gajuannie.glb",
+    model="entity/furnitur/cats_gajuannie.glb",
     scale=0.1,
     position=(-9, 0.5, 5 ),
     rotation =(0,0,0),
@@ -256,6 +275,27 @@ sidewalk = Entity(
     model="entity/jalan/sidewalk.glb",
     scale=1,
     position=(-6, -0.10,50 ),
+    rotation =(0,180,0),
+    collider=None  # Collider sesuai dengan bentuk mesh objek
+)
+sidewalk = Entity(
+    model="entity/jalan/sidewalk.glb",
+    scale=1,
+    position=(6, -0.10,50 ),
+    rotation =(0,180,0),
+    collider=None  # Collider sesuai dengan bentuk mesh objek
+)
+sidewalk = Entity(
+    model="entity/jalan/sidewalk.glb",
+    scale=1,
+    position=(18, -0.10,50 ),
+    rotation =(0,180,0),
+    collider=None  # Collider sesuai dengan bentuk mesh objek
+)
+sidewalk = Entity(
+    model="entity/jalan/sidewalk.glb",
+    scale=1,
+    position=(30, -0.10,50 ),
     rotation =(0,180,0),
     collider=None  # Collider sesuai dengan bentuk mesh objek
 )
@@ -412,6 +452,8 @@ def update():
         player.speed = 5     # Mengembalikan kecepatan pemain ke nilai default (8)
     next(bus_movement)
     next(car_movement)
+    
+
 # =========================================================================================
 # Loop untuk membuat jalan
 jalan_positions = [80, 50, 20, -10, -40, -55]
@@ -469,9 +511,15 @@ bus_movement = move_bus()
 car_movement = move_gtr()
 
 def input(key):
+ 
     if key == 'escape':  # Tutup aplikasi ketika tombol 'esc' ditekan
         application.quit()
         
+    if key == 'space':
+      jump.play()
+    else :
+        jump.stop()
 
 # Menjalankan aplikasi
 app.run()
+
